@@ -64,11 +64,11 @@
 	return TRUE
 
 /proc/do_bot_thing_register(cord,keyy)
-	spawn(-1)
-		world.Export("http://85.214.207.37:1622/register_user?ckey=[keyy]&uid=[cord]")
+	//spawn(-1)
+		//world.Export("http://85.214.207.37:1622/register_user?ckey=[keyy]&uid=[cord]")
 
 /proc/do_bot_thing_regconfirm(keyy)
-	var/list/http = world.Export("http://85.214.207.37:1622/register_user/check?ckey=[keyy]")
+	/*var/list/http = world.Export("http://85.214.207.37:1622/register_user/check?ckey=[keyy]")
 	if(!http)
 		return
 	var/F = file2text(http["CONTENT"])
@@ -77,6 +77,7 @@
 			return TRUE
 		if(F == 1)
 			return TRUE
+	*/
 
 
 /client/proc/discord_name()
